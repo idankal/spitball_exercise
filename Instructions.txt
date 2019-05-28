@@ -1,0 +1,10 @@
+Replecate the design, 
+using vue.js or your preferable Javascript Framework
+
+1) If after 2.5 hours you didn't finish, stop and send the finished result
+2) Make sure the design is responsive to desktop and mobile according to the Images attached
+3) You can use any kind of material design such as vuetify, etc...
+4) Make sure to use the data.JSON file added to the assets folder
+
+
+Good Luck :)

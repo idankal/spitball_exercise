@@ -1,18 +1,33 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- <HelloWorld /> -->
+  <div class="wrapper">
+    <Box :data="data"/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+  import Box from '../components/Box'
 
-export default {
-  name: 'home',
-  components: {
-    HelloWorld,
-  },
-};
+  // Service
+  import { getData } from '@/services/appService'
+
+  export default {
+    components: {
+      Box
+    },
+    data() {
+      return {
+        data: []
+      }
+    },
+    created() {
+      this.data = getData()
+    }
+  }
 </script>
+
+<style media="screen">
+    .wrapper {
+      margin-top: 80px;
+    }
+</style>
